@@ -39,5 +39,7 @@ At the below urls you can find the default parameters for the bid servers, the d
 
 ## Bid Response
 
-
-
+Your response should be in JSON format with the following required information.
+- bid CPM 
+- html snippet for your ad
+- [there really should be something more, like ids and size etc....]
