@@ -32,10 +32,10 @@ At the below urls you can find the default parameters for the bid servers, the d
 
 ### Available Parameters List
 
-|Name|Scope|Description|Example|
-|---|---|---|---|
-|channelid|required|The channel ID from integration partner| 3345678 |
-|cb|required|Cache buster|86654516519|
+|Name|Macro|Scope|Description|Example|
+|---|---|---|---|---|
+|channelid||required|The channel ID from integration partner| 3345678 |
+|cb||required|Cache buster|86654516519|
 
 ## Bid Response
 
