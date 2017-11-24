@@ -1,45 +1,68 @@
-# [Bridgewell]
+This README is for developers who would like to...
+
+Please make a copy of xxx and send it to yyy for review and approval.
+
+Method of request
+
+POST
+parameters are passed by JSON 
+
+GET
+parameters are passed by query string
+
+Both method needs to be SSL supported
+
+Please state carely what are your required parameters.
+
+Below is a list of supported parameters.
+
+Please state which parameters you wish to be passed to your ad server and by what name.
 
 
-**Table of Contents**
 
-- [Install](#Install)
-- [Build](#Build)
-- [Run](#Run)
-- [Contribute](#Contribute)
+# Requirements
 
-<a name="Install"></a>
+* Provide us an ad request endpoint URL
+  - Both POST and GET are supported  
 
-## How to join [XXXXXX]
-1. u
-2. y
-3. w
+* Your response should be in JSON, which must contain the following information
+  - Price (CPM and in USD)
+  - HTML snippet for the creative
 
-## Bid Requests
+* Above integration need support SSL/TLS
 
-We support two ways to send the bid request to your bid servers.
-1. GET with querystrings
-2. POST with JSON is the POST body
-At this moment only the above two methods are supported.
+# Example
+## url for requesting ad: 
 
-Please provide an end point url for the bid requests, this url should be SSL/TLS compilant.
+```
+https://bidder.example.com/request?channelid=3345678&cb=86654516519
+```
+### bid parameters
+|Name|Scope|Description|Example|
+|---|---|---|---|
+|channelid|required|The channel ID from integration partner| 3345678 |
+|cb|required|Cache buster|86654516519|
 
-### Bid Request Parameters Mapping
 
-At the below urls you can find the default parameters for the bid servers, the default format is perfered since it is more efficient.
-- [url example for GET]
-- [url example for POST]
+## Optional parameters provide
+|Name|Description|Example|
+|---|---|---|
+|url|url of adslot|'`https://current.scupio.com/`'|
+|referrer|referrer of adslot|'`https://previous.scupio.com/`'|
+|inif|adslot is in iframe or not|1|
 
-### Available Parameters List
 
-|Name|Macro|Scope|Description|Example|
-|---|---|---|---|---|
-|channelid||required|The channel ID from integration partner| 3345678 |
-|cb||required|Cache buster|86654516519|
+## Response of requesting ad
+```
+{
+    cpm: 0.12189377844333649,
+    creative: '<iframe src="https://bidder.example.com/render.html"></iframe>'
+}
+```
 
-## Bid Response
+### Response parameters
+|Name|Scope|Description|Example|
+|---|---|---|---|
+|cpm|required|The cpm of return creative, USD| 0.12189377844333649 |
+|creative|required|The html snippet which can render ad|'`<iframe src="https://bidder.example.com/render.html"></iframe>`'|
 
-Your response should be in JSON format with the following required information.
-- bid CPM 
-- html snippet for your ad
-- [there really should be something more, like ids and size etc....]
