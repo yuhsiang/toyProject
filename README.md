@@ -14,29 +14,21 @@ Following are steps for guiding you to making the integration.
 
 ## POST request
 
-Bid information are passed to your bid-servers via JSON in the  
-
-## GET request
-	
-ueoau
-
-Both GET and POST HTTP request methods are supported. 
-
-## POST
-Bid parameters are passed by JSON in the request body.
+Bid information are passed to your bid-servers via JSON in the request body.
 ```example json request body
 {
 	request_id: 3,
 	size: [[300, 250], [300, 100]],
-    
+    ...
 }
 ``` 
 
-## GET
+## GET request
+
 Bid parameters are passed by query strings. 
 ```example querystring
-http://example.bid.server.com?request_id=3&width=300&height=250&
+http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250&
 
 ```
-
+`cb` is a random number that acts as a cachebuster.
   
