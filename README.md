@@ -36,5 +36,19 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250...
 
 ## Bid-response
 
+We expect your bid-response to be in JSON with the following format.
 
-  
+```example response
+{
+    request_id: 3,
+    ad: '<div>some example ad</div>'
+    cpm: 12
+}
+
+```
+
+
+|Name|Scope|Description|Example|
+|---|---|---|---|
+|cpm|required|The cpm of return creative, USD| 0.12189377844333649 |
+|creative|required|The html snippet which can render ad|'`<iframe src="https://bidder.example.com/render.html"></iframe>`'|
