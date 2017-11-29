@@ -31,4 +31,6 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250...
 
 ```
 `cb` is a random number that acts as a cachebuster.
+
+Only a single size will be requested via the GET method.
   
