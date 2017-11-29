@@ -6,7 +6,18 @@ This README is for developers who wish to make a request to integrate their fron
 
 # Requirements
 
-* Both GET and POST HTTP request methods are supported. 
+* Bid-request endpoints must support HTTPS 
+* Bid-response must be AJAX with JSON responses
+
+## POST request
+
+ueo
+
+## GET request
+
+ueoau
+
+Both GET and POST HTTP request methods are supported. 
 
 ## POST
 Bid parameters are passed by JSON in the request body.
