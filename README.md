@@ -20,19 +20,30 @@ Bid information are passed to your bid-servers via JSON in the request body.
 ```example json request body
 {
     request_id: 3,
+    params: {
+    	zoneid: 312
+    }
     size: [[300, 250], [300, 100]],
+    referrer: 'https://previous.page.com'
     ...
 }
 ``` 
 
 ### GET
 
-Bid parameters are passed by query strings. It worth noting that only a single size will be requested via the GET method.
+Bid parameters are passed by querystring. All querystring key-values are encoded via the `encodeURIComponent` method. It is worth noting that only a single size will be requested via the GET method.
 ```example querystring
 http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250...
 
 ```
 `cb` is a random number that acts as a cachebuster.
+
+### Bid information/parameters
+
+|Name|Scope|Description|Example|
+|---|---|---|---|
+|channelid|required|The channel ID from integration partner| 3345678 |
+|cb|required|Cache buster|86654516519|
 
 ## Bid-response
 
@@ -47,6 +58,7 @@ We expect your bid-response to be in JSON with the following format.
 
 ```
 
+### 
 
 |Name|Scope|Description|Example|
 |---|---|---|---|
