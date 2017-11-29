@@ -33,7 +33,7 @@ Bid information are passed to your bid-servers via JSON in the request body.
 
 Bid parameters are passed by querystring. All querystring key-values are encoded via the `encodeURIComponent` method. It is worth noting that only a single size will be requested via the GET method.
 ```example querystring
-http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250...
+http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250&referrer=https%3A%2F%2Fprevious.page.com...
 
 ```
 `cb` is a random number that acts as a cachebuster.
