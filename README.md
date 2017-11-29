@@ -12,7 +12,9 @@ Following are steps for guiding you to making the integration.
 * Bid-request endpoints must support HTTPS 
 * Bid-response must be AJAX with JSON responses
 
-## POST request
+## Bid-request
+
+### POST
 
 Bid information are passed to your bid-servers via JSON in the request body.
 ```example json request body
@@ -23,7 +25,7 @@ Bid information are passed to your bid-servers via JSON in the request body.
 }
 ``` 
 
-## GET request
+### GET
 
 Bid parameters are passed by query strings. It worth noting that only a single size will be requested via the GET method.
 ```example querystring
@@ -31,4 +33,8 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250...
 
 ```
 `cb` is a random number that acts as a cachebuster.
+
+## Bid-response
+
+
   
