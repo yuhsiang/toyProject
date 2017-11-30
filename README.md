@@ -44,7 +44,7 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250&ref
 
 |Name|Type|Description|Example|POST|GET|
 |---|---|---|---|---|---|
-| cb | number | Cache buster | 86654516519 | | v |
+| cb | number | cache buster | 86654516519 | | v |
 | width | number | width of ad slot in px | 300 | | v |
 | height | number | height of ad slot in px| 250 | | v |
 | size | array | [FILL IN DESCRIPTION OF THIS SIZE THINGY] | [[300, 250], [300, 100]] | v | |
@@ -76,7 +76,7 @@ We expect your bid-response to be in JSON with the following format.
 
 ## A full example of the bid-request JSON
 
-```example full json request body
+```an full example of the json request body
 {
     request_id: 3,
     params: {
