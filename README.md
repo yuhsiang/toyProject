@@ -25,6 +25,7 @@ Bid information are passed to your bid-servers via JSON in the request body.
     	zoneid: 312
     }
     size: [[300, 250], [300, 100]],
+    url: 'https://current.page.com',
     referrer: 'https://previous.page.com'
     ...
 }
@@ -41,10 +42,12 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250&ref
 
 ### Bid information/parameters
 
-|Name|Scope|Description|Example|
-|---|---|---|---|
-|channelid|required|The channel ID from integration partner| 3345678 |
-|cb|required|Cache buster|86654516519|
+|Name|Scope|Description|Example|POST|GET|
+|---|---|---|---|---|---|
+|cb|required|Cache buster|86654516519||v|
+|request_id|required|request id for linking request and response|3|v|v|
+|||||||
+
 [I THINK THERE IS MUCH MORE]
 
 ## Bid-response
