@@ -48,13 +48,10 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250&ref
 | width | number | width of ad slot in px | 300 | | v |
 | height | number | height of ad slot in px| 250 | | v |
 | size | array | [FILL IN DESCRIPTION OF THIS SIZE THINGY] | [[300, 250], [300, 100]] | v | |
-
-|url|required|url of ad slot|https://url.com| | |
-|referrer|required|referrer of ad slot|https://referrer.com| | |
-|count|required|return creative amount|1| | |
-|iad|required|interstitial ad slot|1| | |
-|atf|required|whether this ad slot  is above the fold or not| true/false | | |
-|amount|required|amount of scupio ad on this web|1| | |
+| url | string | url of the web page | https://url.com | v | v |
+| referrer | string | referrer of the referrer | https://referrer.com | v | v |
+| interstitial | true/false | whether this is an interstitial ad slot or not | true | v | v |
+| atf | true/false | whether this ad slot is above the fold or not | true | v | v |
 
 ## Bid-response
 
