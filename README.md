@@ -6,7 +6,7 @@ Following are steps for guiding you to making the integration.
 1. Design your bid-request params
 2. Decide your bid request endpoint url, and request method (GET or POST)
 3. Implement the bid response
-4. Copy and fill the technical form from [SOME TO BE ADDED URL] and send it to [SOME EMAIL, PROBABILY MARKETING PEOPLE].
+4. Copy and fill the technical [FORM](https://github.com/kuchunchou/toyProject/blob/master/form.md) and send it to [SOME EMAIL, PROBABILY MARKETING PEOPLE].
 
 # Requirements
 
