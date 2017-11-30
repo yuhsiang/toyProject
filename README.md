@@ -47,7 +47,7 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250&ref
 | cb | number | Cache buster | 86654516519 | | v |
 | width | number | width of ad slot in px | 300 | | v |
 | height | number | height of ad slot in px| 250 | | v |
-| size | array | [FILL IN DESCRIPTION OF THIS SIZE THINGY] | v | |
+| size | array | [FILL IN DESCRIPTION OF THIS SIZE THINGY] | [[300, 250], [300, 100]] | v | |
 
 |url|required|url of ad slot|https://url.com| | |
 |referrer|required|referrer of ad slot|https://referrer.com| | |
