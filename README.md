@@ -20,13 +20,13 @@ Following are steps for guiding you to making the integration.
 Bid information are passed to your bid-servers via JSON in the request body.
 ```example json request body
 {
-    request_id: 32itdo54o7,
+    request_id: "32itdo54o7",
     params: {
     	zoneid: 312
     }
     size: [[300, 250], [300, 100]],
-    url: 'https://current.page.com',
-    referrer: 'https://previous.page.com'
+    url: "https://current.page.com",
+    referrer: "https://previous.page.com"
     ...
 }
 ``` 
@@ -60,9 +60,9 @@ We expect your bid-response to be in JSON with the following format.
 
 ```example response
 {
-    request_id: 32itdo54o7,
+    request_id: "32itdo54o7",
     cpm: 0.1218,
-    ad: '<div>some example ad</div>'
+    ad: "<div>some example ad</div>"
 }
 
 ```
