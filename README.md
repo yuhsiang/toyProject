@@ -21,15 +21,15 @@ Following are steps for guiding you to making the integration.
 Bid information are passed to your bid-servers via JSON in the request body.
 ```example json request body
 {
-    request_id: "32itdo54o7",
-    params: {
-    	channel_id: 312,
-      web_id: "urx54u"
-    }
-    size: [[300, 250], [300, 100]],
-    url: "https://current.page.com",
-    referrer: "https://previous.page.com"
-    ...
+  request_id: "32itdo54o7",
+  params: {
+    channel_id: 312,
+    web_id: "urx54u"
+  }
+  size: [[300, 250], [300, 100]],
+  url: "https://current.page.com",
+  referrer: "https://previous.page.com"
+  ...
 }
 ```
 
