@@ -71,9 +71,9 @@ We expect your bid-response to be in JSON with the following format.
 
 |Name|Type|Description|Example|
 |---|---|---|---|
-|request_id| string | the request_id, used to tie this bid back to the request| `32itdo54o7` |
-|cpm|required|The cpm of return creative, USD| 0.1218 |
-|ad|required|The html snippet which can render ad|'`<div>some example ad</div>`'|
+| request_id | string | the request_id, used to tie this bid back to the request| `32itdo54o7` |
+| cpm | number | The cpm of the bid, USD | `0.1218` |
+| ad | string | The html snippet of your ad | `<div>some example ad</div>` |
 
 ## A full example of the bid-request JSON
 
