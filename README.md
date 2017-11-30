@@ -47,7 +47,7 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250&ref
 | cb | number | cache buster | `86654516519` | | v |
 | width | number | width of ad slot in px | `300` | | v |
 | height | number | height of ad slot in px| `250` | | v |
-| size | array | [FILL IN DESCRIPTION OF THIS SIZE THINGY] | `[[300, 250], [300, 100]]` | v | |
+| size | array | Allowed size for this ad slot, array of arrays, the inner array will always have two numbers, the first is the width and the second is the height | `[[300, 250], [300, 100]]` | v | |
 | url | string | url of the web page | `https://url.com` | v | v |
 | referrer | string | referrer of the referrer | `https://referrer.com` | v | v |
 | interstitial | true/false | `whether this is an interstitial ad slot or not` | true | v | v |
