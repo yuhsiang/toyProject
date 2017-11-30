@@ -75,9 +75,9 @@ We expect your bid-response to be in JSON with the following format.
 | cpm | number | The cpm of the bid, USD | `0.1218` |
 | ad | string | The html snippet of your ad | `<div>some example ad</div>` |
 
-## A full examples of the bid-request
+## A full examples of the POST bid-request JSON
 
-```an full example of the json request body
+```A full examples of the POST bid-request JSON
 {
     request_id: 3,
     params: {
@@ -92,7 +92,9 @@ We expect your bid-response to be in JSON with the following format.
 }
 ``` 
 
-```an full example of the json request body
+## A full example of the GET querystring
+
+```A full example of the GET querystring
 https://example.bidder.com?cb=23465276&width=300&height=250&interstital=false&atf=true&channel_id=312&web_id=246&url=https%3A%2F%2Fcurrent.page.com&referrer=https%3A%2F%2Fprevious.page.com
 
 ``` 
