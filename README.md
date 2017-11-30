@@ -52,8 +52,8 @@ We expect your bid-response to be in JSON with the following format.
 ```example response
 {
     request_id: 3,
+    cpm: 12,
     ad: '<div>some example ad</div>'
-    cpm: 12
 }
 
 ```
@@ -62,5 +62,6 @@ We expect your bid-response to be in JSON with the following format.
 
 |Name|Scope|Description|Example|
 |---|---|---|---|
+|request_id|required|the request_id, used to tie this bid back to the request| 3 |
 |cpm|required|The cpm of return creative, USD| 0.12189377844333649 |
-|ad|required|The html snippet which can render ad|'`<iframe src="https://bidder.example.com/render.html"></iframe>`'|
+|ad|required|The html snippet which can render ad|'`<div>some example ad</div>`'|
