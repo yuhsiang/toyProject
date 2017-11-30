@@ -44,10 +44,11 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250&ref
 
 |Name|Type|Description|Example|POST|GET|
 |---|---|---|---|---|---|
+| request_id| string | the request_id, used to tie this bid request to the response | `32itdo54o7` | v | v |
 | cb | number | cache buster | `86654516519` | | v |
 | width | number | width of ad slot in px | `300` | | v |
 | height | number | height of ad slot in px| `250` | | v |
-| size | array | Allowed size for this ad slot, array of arrays, the inner array will always have two numbers, the first is the width and the second is the height | `[[300, 250], [300, 100]]` | v | |
+| size | array | allowed size for this ad slot, array of arrays, the inner array will always have two numbers, the first is the width and the second is the height | `[[300, 250], [300, 100]]` | v | |
 | url | string | url of the web page | `https://url.com` | v | v |
 | referrer | string | referrer of the referrer | `https://referrer.com` | v | v |
 | interstitial | true/false | whether this is an interstitial ad slot or not | `true` | v | v |
@@ -68,9 +69,9 @@ We expect your bid-response to be in JSON with the following format.
 
 ### Bid-response parameters 
 
-|Name|Scope|Description|Example|
+|Name|Type|Scope|Description|Example|
 |---|---|---|---|
-|request_id|required|the request_id, used to tie this bid back to the request| 3 |
+|request_id| string | the request_id, used to tie this bid back to the request| 3 |
 |cpm|required|The cpm of return creative, USD| 0.1218 |
 |ad|required|The html snippet which can render ad|'`<div>some example ad</div>`'|
 
