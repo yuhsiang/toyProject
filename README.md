@@ -63,4 +63,4 @@ We expect your bid-response to be in JSON with the following format.
 |Name|Scope|Description|Example|
 |---|---|---|---|
 |cpm|required|The cpm of return creative, USD| 0.12189377844333649 |
-|creative|required|The html snippet which can render ad|'`<iframe src="https://bidder.example.com/render.html"></iframe>`'|
+|ad|required|The html snippet which can render ad|'`<iframe src="https://bidder.example.com/render.html"></iframe>`'|
