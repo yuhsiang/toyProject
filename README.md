@@ -23,14 +23,17 @@ Bid information are passed to your bid-servers via JSON in the request body.
 {
     request_id: "32itdo54o7",
     params: {
-    	zoneid: 312
+    	channel_id: 312,
+      web_id: "urx54u"
     }
     size: [[300, 250], [300, 100]],
     url: "https://current.page.com",
     referrer: "https://previous.page.com"
     ...
 }
-``` 
+```
+
+The `params` object is the place to put all parameters needs for your bid servers to make the bid. Only `string` and `number` type is supported as parameters.
 
 ### GET
 
@@ -40,6 +43,7 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250&ref
 
 ```
 `cb` is a random number that acts as a cachebuster.
+
 
 ### Bid information/parameters
 
