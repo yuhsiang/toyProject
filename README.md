@@ -44,14 +44,14 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250&ref
 
 |Name|Type|Description|Example|POST|GET|
 |---|---|---|---|---|---|
-| cb | number | cache buster | 86654516519 | | v |
-| width | number | width of ad slot in px | 300 | | v |
-| height | number | height of ad slot in px| 250 | | v |
-| size | array | [FILL IN DESCRIPTION OF THIS SIZE THINGY] | [[300, 250], [300, 100]] | v | |
-| url | string | url of the web page | https://url.com | v | v |
-| referrer | string | referrer of the referrer | https://referrer.com | v | v |
-| interstitial | true/false | whether this is an interstitial ad slot or not | true | v | v |
-| atf | true/false | whether this ad slot is above the fold or not | true | v | v |
+| cb | number | cache buster | `86654516519` | | v |
+| width | number | width of ad slot in px | `300` | | v |
+| height | number | height of ad slot in px| `250` | | v |
+| size | array | [FILL IN DESCRIPTION OF THIS SIZE THINGY] | `[[300, 250], [300, 100]]` | v | |
+| url | string | url of the web page | `https://url.com` | v | v |
+| referrer | string | referrer of the referrer | `https://referrer.com` | v | v |
+| interstitial | true/false | `whether this is an interstitial ad slot or not` | true | v | v |
+| atf | true/false | `whether this ad slot is above the fold or not` | true | v | v |
 
 ## Bid-response
 
