@@ -44,6 +44,7 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250&ref
 |---|---|---|---|
 |channelid|required|The channel ID from integration partner| 3345678 |
 |cb|required|Cache buster|86654516519|
+[I THINK THERE IS MUCH MORE]
 
 ## Bid-response
 
@@ -75,7 +76,7 @@ We expect your bid-response to be in JSON with the following format.
     	zoneid: 312
     }
     size: [[300, 250], [300, 100]],
-    referrer: 'https://previous.page.com'
-    ...
+    referrer: 'https://previous.page.com',
+    [COMPLETE THIS]
 }
 ``` 
