@@ -70,7 +70,7 @@ We expect your bid-response to be in JSON with the following format.
 ### Bid-response parameters 
 
 |Name|Type|Scope|Description|Example|
-|---|---|---|---|
+|---|---|---|---|---|
 |request_id| string | the request_id, used to tie this bid back to the request| 3 |
 |cpm|required|The cpm of return creative, USD| 0.1218 |
 |ad|required|The html snippet which can render ad|'`<div>some example ad</div>`'|
