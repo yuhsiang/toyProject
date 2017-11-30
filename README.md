@@ -50,8 +50,8 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250&ref
 | size | array | Allowed size for this ad slot, array of arrays, the inner array will always have two numbers, the first is the width and the second is the height | `[[300, 250], [300, 100]]` | v | |
 | url | string | url of the web page | `https://url.com` | v | v |
 | referrer | string | referrer of the referrer | `https://referrer.com` | v | v |
-| interstitial | true/false | `whether this is an interstitial ad slot or not` | true | v | v |
-| atf | true/false | `whether this ad slot is above the fold or not` | true | v | v |
+| interstitial | true/false | whether this is an interstitial ad slot or not | `true` | v | v |
+| atf | true/false | whether this ad slot is above the fold or not | `true` | v | v |
 
 ## Bid-response
 
