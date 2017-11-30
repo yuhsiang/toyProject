@@ -2,10 +2,11 @@
 
 This README is for developers who wish to make a request to integrate their frontend ad bidders with [CONFIRM NAME].
 
-Following are steps for guiding you to making the integration. 
-1. Decide your bid request endpoint url, and request method (GET or POST)
-2. Implement the bid response
-3. Copy and fill the technical form from [SOME TO BE ADDED URL] and send it to [SOME EMAIL, PROBABILY MARKETING PEOPLE].
+Following are steps for guiding you to making the integration.
+1. Design your bid-request params
+2. Decide your bid request endpoint url, and request method (GET or POST)
+3. Implement the bid response
+4. Copy and fill the technical form from [SOME TO BE ADDED URL] and send it to [SOME EMAIL, PROBABILY MARKETING PEOPLE].
 
 # Requirements
 
