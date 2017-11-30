@@ -25,6 +25,7 @@ Bid information are passed to your bid-servers via JSON in the request body.
     	zoneid: 312
     }
     size: [[300, 250], [300, 100]],
+    url: 'https://current.page.com',
     referrer: 'https://previous.page.com'
     ...
 }
