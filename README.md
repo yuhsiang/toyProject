@@ -20,7 +20,7 @@ Following are steps for guiding you to making the integration.
 Bid information are passed to your bid-servers via JSON in the request body.
 ```example json request body
 {
-    request_id: 3,
+    request_id: 32itdo54o7,
     params: {
     	zoneid: 312
     }
@@ -60,7 +60,7 @@ We expect your bid-response to be in JSON with the following format.
 
 ```example response
 {
-    request_id: 3,
+    request_id: 32itdo54o7,
     cpm: 0.1218,
     ad: '<div>some example ad</div>'
 }
@@ -71,7 +71,7 @@ We expect your bid-response to be in JSON with the following format.
 
 |Name|Type|Description|Example|
 |---|---|---|---|
-|request_id| string | the request_id, used to tie this bid back to the request| 3 |
+|request_id| string | the request_id, used to tie this bid back to the request| `32itdo54o7` |
 |cpm|required|The cpm of return creative, USD| 0.1218 |
 |ad|required|The html snippet which can render ad|'`<div>some example ad</div>`'|
 
