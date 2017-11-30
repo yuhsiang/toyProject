@@ -42,13 +42,18 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250&ref
 
 ### Bid information/parameters
 
-|Name|Scope|Description|Example|POST|GET|
-|---|---|---|---|---|---|
-|cb|required|Cache buster|86654516519||v|
-|request_id|required|request id for linking request and response|3|v|v|
-|||||||
-
-[I THINK THERE IS MUCH MORE]
+|Name|Scope|Description|Example|
+|---|---|---|---|
+|channelid|required|The channel ID from integration partner| 3345678 |
+|cb|required|Cache buster|86654516519|
+|width|required|width of ad slot|300|
+|height|required|height of ad slot|250|
+|url|required|url of ad slot|https://url.com|
+|referrer|required|referrer of ad slot|https://referrer.com|
+|count|required|return creative amount|1|
+|iad|required|interstitial ad slot|1|
+|atf|required|atf ad slot|1|
+|amount|required|amount of scupio ad on this web|1|
 
 ## Bid-response
 
