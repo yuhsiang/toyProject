@@ -75,16 +75,24 @@ We expect your bid-response to be in JSON with the following format.
 | cpm | number | The cpm of the bid, USD | `0.1218` |
 | ad | string | The html snippet of your ad | `<div>some example ad</div>` |
 
-## A full example of the bid-request JSON
+## A full examples of the bid-request
 
 ```an full example of the json request body
 {
     request_id: 3,
     params: {
-    	zoneid: 312
+    	channel_id: 312,
+      web_id: 246
     }
     size: [[300, 250], [300, 100]],
+    url: 'https://current.page.com',
     referrer: 'https://previous.page.com',
-    [COMPLETE THIS]
+    interstital: false,
+    atf: true
 }
+``` 
+
+```an full example of the json request body
+https://example.bidder.com?cb=23465276&width=300&height=250&interstital=false&atf=true&channel_id=312&web_id=246&url=https%3A%2F%2Fcurrent.page.com&referrer=https%3A%2F%2Fprevious.page.com
+
 ``` 
