@@ -3,16 +3,16 @@
 This README is for developers who wish to make a request to integrate their frontend ad bidders with Scupio SSP.
 
 Following are steps for guiding you to making the integration.
-1. Design your bid-request params
+1. Design your bid request params
 2. Decide your bid request endpoint url, and request method (GET or POST)
 3. Implement the bid response
 4. Copy and fill the technical [form](https://github.com/kuchunchou/toyProject/blob/master/form.md) and send it to <mk@bridgewell.com>.
 
 # Requirements
 
-* Bid-request endpoints must support HTTPS
+* Bid request endpoints must support HTTPS
 * The returned ad and all resources must also support HTTPS
-* Bid-response must be AJAX with JSON responses
+* Bid response must be AJAX with JSON responses
 
 ## Bid-request
 
@@ -59,9 +59,9 @@ http://example.bid.server.com?cb=234567246&request_id=3&width=300&height=250&ref
 | interstitial | true/false | whether this is an interstitial ad slot or not | `true` | v | v |
 | atf | true/false | whether this ad slot is above the fold or not | `true` | v | v |
 
-## Bid-response
+## Bid response
 
-We expect your bid-response to be in JSON with the following format.
+We expect your bid response to be in JSON with the following format.
 
 ```example response
 {
@@ -72,7 +72,7 @@ We expect your bid-response to be in JSON with the following format.
 
 ```
 
-### Bid-response parameters 
+### Bid response parameters 
 
 |Name|Type|Description|Example|
 |---|---|---|---|
@@ -80,9 +80,9 @@ We expect your bid-response to be in JSON with the following format.
 | cpm | number | The cpm of the bid, USD | `0.1218` |
 | ad | string | The html snippet of your ad | `<div>some example ad</div>` |
 
-## A full examples of the POST bid-request JSON
+## A full examples of the POST bid request JSON
 
-```A full examples of the POST bid-request JSON
+```A full examples of the POST bid request JSON
 {
     request_id: 3,
     params: {

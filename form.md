@@ -6,9 +6,9 @@ Maintainer(email):
 
 # Bid request
 
-Your bid-request endpoint url:
+Your bid request endpoint url:
 
-Method of Request(GET/POST):
+Method of request(GET/POST):
 
 Location of your bid servers(list all possible locations):
 
